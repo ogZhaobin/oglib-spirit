@@ -1,0 +1,4 @@
+com\oglib\spirit\boot\cloud\pms\sys\CloudPmsSysApplication.class
+com\oglib\spirit\boot\cloud\pms\sys\entity\SysUserInf.class
+com\oglib\spirit\boot\cloud\pms\sys\controller\SysUserController.class
+com\oglib\spirit\boot\cloud\pms\sys\mapper\ISysUserMapper.class

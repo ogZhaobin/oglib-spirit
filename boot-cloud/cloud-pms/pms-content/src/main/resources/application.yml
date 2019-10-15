@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: content
+# ribbon
+ribbon:
+  eager-load:
+    enable: true
+    clients: pms-content,pms-sys

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<parent>
+    <artifactId>oglib-spirit</artifactId>
+    <groupId>com.oglib.spirit.boot</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+</parent>
+<modelVersion>4.0.0</modelVersion>
+
+<artifactId>boot.cloud</artifactId>
+<modules>
+    <module>cloud-pms</module>
+    <module>cloud-monitor</module>
+</modules>
+<groupId>com.oglib.spirit.boot.cloud</groupId>
+<version>0.0.1-SNAPSHOT</version>
+<packaging>pom</packaging>
+<name>spirit-boot-cloud</name>
+<description>基于Spring Cloud Alibaba的微服务解决方案</description>
+
+<dependencyManagement>
+    <dependencies>
+        <!--整合springCloud-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>Greenwich.SR2</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <!--整合springCloudAlibaba-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+            <version>2.1.0.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+</project>

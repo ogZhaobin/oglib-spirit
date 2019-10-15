@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>oglib-spirit</artifactId>
+        <groupId>com.oglib.spirit.boot</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>boot.common</artifactId>
+    <modules>
+        <module>common-utils</module>
+        <module>common-zk</module>
+        <module>common-redis</module>
+        <module>common-kafka</module>
+    </modules>
+    <groupId>com.oglib.spirit.boot.common</groupId>
+    <name>spirit-boot-common</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+
+</project>
