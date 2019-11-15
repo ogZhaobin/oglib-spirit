@@ -17,6 +17,7 @@
         <module>collect-netty-statute</module>
         <module>collect-netty-balance</module>
         <module>collect-netty-common</module>
+        <module>collect-experience</module>
     </modules>
     <groupId>com.oglib.spirit.boot.collect</groupId>
     <name>spirit-boot-collect</name>

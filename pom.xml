@@ -8,6 +8,7 @@
         <module>boot-source</module>
         <module>boot-collect</module>
         <module>boot-common</module>
+        <module>boot-utils</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
