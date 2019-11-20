@@ -14,5 +14,29 @@
     <packaging>jar</packaging>
     <name>collect-netty-server</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.oglib.spirit.boot.collect</groupId>
+            <artifactId>netty.common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.oglib.spirit.boot.collect.server.CollectNettyServerApplication</mainClass>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

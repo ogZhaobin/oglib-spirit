@@ -21,13 +21,6 @@
             <artifactId>guava</artifactId>
             <version>26.0-jre</version>
         </dependency>
-
-        <!-- netty -->
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.1.31.Final</version>
-        </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -40,7 +33,11 @@
             <artifactId>disruptor</artifactId>
             <version>3.4.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.oglib.spirit.boot.collect</groupId>
+            <artifactId>collect.experience</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
-
 
 </project>

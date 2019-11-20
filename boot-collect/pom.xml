@@ -18,11 +18,18 @@
         <module>collect-netty-balance</module>
         <module>collect-netty-common</module>
         <module>collect-experience</module>
+<!--        <module>collect-netty-protobuf</module>-->
     </modules>
     <groupId>com.oglib.spirit.boot.collect</groupId>
     <name>spirit-boot-collect</name>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

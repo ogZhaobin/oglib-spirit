@@ -1,0 +1,18 @@
+syntax = "proto3";
+option java_package = "com.oglib.spirit.boot.collect.protobuf";
+option java_multiple_files = true;
+message Frame{
+    string messageName = 1;
+    bytes data = 2;
+}
+
+message UserEntity{
+    string name = 1;
+    int32 age = 2;
+    int32 sex = 3;
+}
+
+message OrgEntity{
+    string orgName = 1;
+    string orgNo = 2;
+}
