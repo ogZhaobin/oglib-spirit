@@ -13,11 +13,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class SecKillEventConsumer implements EventHandler<SecKillEvent> {
 
-    private ISecKillService secKillService = SpringBeanHolderUtils.getBean(SecKillServiceImpl.class);
 
     @Override
     public void onEvent(SecKillEvent event, long sequence, boolean endOfBatch) throws Exception {
         log.info("sequence = {}, endOfBatch = {}", sequence, endOfBatch);
-        secKillService.startSecKill(event.getKillId(), event.getUserId());
     }
 }

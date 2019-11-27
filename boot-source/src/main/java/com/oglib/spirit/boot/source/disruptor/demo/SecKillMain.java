@@ -27,5 +27,6 @@ public class SecKillMain {
         }
 
         disruptor.shutdown();
+
     }
 }

@@ -110,7 +110,6 @@ public class ClassUtils {
         } else if (file.isFile()) {
             //是普通字节码文件
             String fileName = file.getName();
-            System.out.println(String.format("path = %s; absolutePath = %s", file.getPath(), file.getAbsolutePath()));
             if (fileName.endsWith(".class") && isInPackages(file.getPath(), packages)) {
                 String fullyQualifiedName = getFullyQualifiedName(file, classpath);
                 try {

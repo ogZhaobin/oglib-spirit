@@ -11,8 +11,8 @@ public class InnerQueueBuffer implements IMessageBuffer{
 
     private final BlockingQueue<HandlerDataModal> queue = new LinkedBlockingQueue<>();
 
-    private static InnerQueueBuffer instance = new InnerQueueBuffer();
 
+    private static InnerQueueBuffer instance = new InnerQueueBuffer();
 
     private InnerQueueBuffer() {
     }
