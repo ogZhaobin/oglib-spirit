@@ -26,8 +26,14 @@ public class NettyServerDisruptor implements INettyService {
     @Override
     @PostConstruct
     public void init() throws InterruptedException {
-        shutdownHook(boss,work);
-        runningForString(boss, work);
+        new Thread(() -> {
+            shutdownHook(boss,work);
+            try {
+                runningForString(boss, work);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 
 }

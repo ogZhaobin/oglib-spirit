@@ -19,7 +19,13 @@ public class NettyServerSimulator implements INettyService {
     @Override
     @PostConstruct
     public void init() throws Exception {
-        shutdownHook(boss,work);
-        runningForString(boss, work);
+        new Thread(() ->{
+            shutdownHook(boss,work);
+            try {
+                runningForString(boss, work);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 }

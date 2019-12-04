@@ -38,9 +38,16 @@ public class NettyServer implements INettyService {
 
     @PostConstruct
     public void init() throws InterruptedException {
-        ExecutorService executorService = startHandler();
-        shutdownHook(executorService,boss,work);
-        customProtobufRunning(boss, work);
+
+        new Thread(() -> {
+            ExecutorService executorService = startHandler();
+            shutdownHook(executorService,boss,work);
+            try {
+                customProtobufRunning(boss, work);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 
     /**
